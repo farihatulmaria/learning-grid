@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        display: grid;
+        /* grid-template: grid-template-rows / grid-template-columns */
+        /* grid-template: repeat(how many you want rows, what you want); / repeat(how many you want columns, what you want); */
+        /* grid-template-columns: repeat(how many you want, what you want); */
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 4px;
+      }
+    </style>
+    <title>learning about grid property in css</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>

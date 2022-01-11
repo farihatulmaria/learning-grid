@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        height: 60%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 50px 1fr 50px;
+        grid-template-areas: "";
+      }
+      .header {
+        /* grid-column: grid-column-start / grid-column-end;   */
+        grid-column: 2 / -1;
+        /* grid-column: 1 / 3;  same*/
+      }
+      .footer {
+        grid-column: 1 / -1;
+        /* grid-column: 1 / span 2; same*/
+      }
+      .content {
+        grid-column: 2 / -1;
+      }
+      .menu {
+        grid-row: 1 / 3;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">header</div>
+      <div class="menu">menu</div>
+      <div class="content">content</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>

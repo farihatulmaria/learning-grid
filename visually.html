@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        height: 60%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 50px 1fr 50px;
+        grid-template-areas:
+          "h h h h h h h h h h h h"
+          "m m m m c c c c c c c c"
+          "f f f f f f f f f f f f";
+      }
+      .header {
+        grid-area: h;
+      }
+      .footer {
+        grid-area: f;
+      }
+      .content {
+        grid-area: c;
+      }
+      .menu {
+        grid-area: m;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">header</div>
+      <div class="menu">menu</div>
+      <div class="content">content</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
